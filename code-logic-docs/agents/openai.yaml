@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Logic Docs"
+  short_description: "Read code and write Markdown docs for logic."
+  default_prompt: "Use $code-logic-docs to read the code, trace the logic, and draft concise Markdown docs that explain flow, rules, and edge cases."

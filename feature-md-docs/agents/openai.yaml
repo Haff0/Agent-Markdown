@@ -1,0 +1,4 @@
+interface:
+  display_name: "Feature MD Docs"
+  short_description: "Write Markdown docs for code features."
+  default_prompt: "Use $feature-md-docs to document the requested feature or function from code. First read relevant docs from E:\\D\\Git\\uat\\Codex\\docs, then research the code, split the output into separate Markdown files per subfeature or method, and save the generated docs to E:\\D\\Git\\uat\\Codex\\docs unless the user specifies another location."

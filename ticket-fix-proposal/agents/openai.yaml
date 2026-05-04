@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ticket Fix Proposal"
+  short_description: "Propose code-fix options from a ticket"
+  default_prompt: "Use $ticket-fix-proposal to turn the outputs of read-jira-ticket and ticket-code-research into concrete code-fix options and a recommended implementation plan."
+
+policy:
+  allow_implicit_invocation: true

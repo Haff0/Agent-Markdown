@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ticket Code Research"
+  short_description: "Trace code from Jira ticket briefs"
+  default_prompt: "Use $ticket-code-research to read docs first, then trace the impacted code paths, entry points, tests, risks, and unknowns from this Jira ticket brief."
