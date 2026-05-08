@@ -1,6 +1,6 @@
 ---
 name: summarize-doc-logic
-description: Summarize documents in E:\D\Git\uat\Codex\docs into PM/BA-friendly workflow logic and change-impact notes. Use when analyzing a docs file in that folder and you must first check the related code for uncommitted changes; if the code is dirty, stop and report the changed files instead of summarizing.
+description: Summarize documents in E:\D\Git\uat\Codex\docs into PM/BA-friendly workflow logic and change-impact notes. Use when analyzing a docs file in that folder and you need to compare the documented workflow with source code behavior before summarizing.
 ---
 
 # Summarize Doc Logic
@@ -12,18 +12,21 @@ Turn a technical doc into a concise business-facing explanation of how the workf
 ## Workflow
 
 1. Identify the doc being summarized and the code repo(s) it depends on from entry points, paths, and dependencies.
-2. Check the relevant repo(s) for uncommitted changes before doing any summary work.
-3. If any modified, deleted, added, or untracked files exist, stop immediately and report the changed paths.
-4. If the code is clean, read the doc and extract the workflow in business terms.
-5. Summarize the logic with emphasis on triggers, branches, state changes, side effects, edge cases, and workflow differences.
+2. Inspect the relevant source code behavior needed to validate the doc.
+3. Compare the doc against the code and check whether the workflow, states, side effects, or branching logic differ.
+4. If the doc and code match, continue with the summary.
+5. If the doc and code differ, stop and report the mismatch instead of summarizing.
 
 ## Stop Condition
 
-If code is changed, do not summarize the doc.
+Only block when the source code and the doc describe different logic.
 
-Report only:
+Report:
 
-- Which source code not mapped to the doc, required updates, or is unclear in the doc
+- Which doc was checked
+- Which code areas or files were compared
+- The specific mismatch in workflow, state, side effect, or decision logic
+- What needs to be updated in the doc or code
 
 ## Summary Style
 

@@ -1,4 +1,4 @@
 interface:
-  display_name: "Read Jira Ticket"
+  display_name: "Ticket Read Jira Ticket"
   short_description: "Summarize and analyze Jira tickets fast"
   default_prompt: "Use $read-jira-ticket to read a Jira ticket and return a concise summary, scope, risks, and clarification questions."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git Change Review"
+  short_description: "Review git diffs, logic, and risks"
+  default_prompt: "Use $review-git-change to review changed code in a git diff, summarize the logic, note what was done and not done, and call out likely bugs or regressions."

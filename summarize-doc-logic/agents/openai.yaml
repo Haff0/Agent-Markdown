@@ -1,4 +1,4 @@
 interface:
   display_name: "Doc Logic Summary"
   short_description: "PM/BA-friendly doc logic summaries"
-  default_prompt: "Analyze the target doc in E:\\D\\Git\\uat\\Codex\\docs. Find the related repo(s), check them for uncommitted changes, and stop with a change report if any files are modified, added, deleted, or untracked. If the code is clean, summarize the workflow for PM/BA readers with purpose, entry points, end-to-end flow, decision points, state changes, side effects, edge cases, dependencies, and what changes across the workflow."
+  default_prompt: "Analyze the target doc in E:\\D\\Git\\uat\\Codex\\docs. Find the related source code, compare the documented workflow with code behavior, and stop with a mismatch report if the logic, state changes, side effects, or branching differ. If the doc and code match, summarize the workflow for PM/BA readers with purpose, entry points, end-to-end flow, decision points, state changes, side effects, edge cases, dependencies, and what changes across the workflow."

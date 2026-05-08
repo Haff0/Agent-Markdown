@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workflow Diff Summary"
+  short_description: "Summarize git changes as PM/BA-friendly workflow updates"
+  default_prompt: "Read the git change and explain what workflow or business logic changed, focusing on before/after behavior, affected user flow, and business impact. Omit low-level code trivia unless it changes behavior."

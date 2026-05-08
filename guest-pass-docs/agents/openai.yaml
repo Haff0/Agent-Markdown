@@ -1,4 +1,0 @@
-interface:
-  display_name: "Guest Pass Docs"
-  short_description: "Document Guest Pass feature logic in Markdown."
-  default_prompt: "Use $guest-pass-docs to read the GuestPasses feature code and write Markdown docs for each function or subflow, including purpose, inputs, outputs, branching, side effects, and edge cases."

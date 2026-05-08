@@ -1,0 +1,4 @@
+interface:
+  display_name: "BO Create Member Test"
+  short_description: "Run BO UAT member creation test"
+  default_prompt: "Use $bo-create-member-test to run the BO UAT create-member workflow and report the result."
